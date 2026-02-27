@@ -8,8 +8,76 @@
     <title>Get Work</title>
   </head>
   <body>
-    <div>
-      <h1>Hello World</h1>
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:rounded-lg focus:bg-white focus:px-4 focus:py-2 focus:font-medium focus:text-gray-900 focus:shadow-lg">
+Skip to content
+</a>
+    <header class="sticky top-0 z-50 w-full border-b border-gray-200 bg-white/85 backdrop-blur supports-backdrop-filter:bg-white/85"> <div class="mx-auto flex h-16 max-w-7xl items-center gap-8 px-4"> <a href="/" class="inline-block text-xl font-medium transition-opacity hover:opacity-80"> HyperUI </a> <nav class="hidden items-center gap-4 lg:flex"> <a href="/components/application" class="text-sm font-medium text-gray-600 transition-colors hover:text-gray-900">  Application  </a> <a href="/components/marketing" class="text-sm font-medium text-gray-600 transition-colors hover:text-gray-900">  Marketing  </a> <a href="/components/neobrutalism" class="text-sm font-medium text-gray-600 transition-colors hover:text-gray-900">  Neobrutalism  </a> <a href="/blog" class="text-sm font-medium text-gray-600 transition-colors hover:text-gray-900">  Blog  </a> </nav> <div class="flex flex-1 items-center justify-end gap-2">  <a href="https://github.com/markmead/hyperui" class="inline-flex items-center justify-center gap-2 rounded-md border border-gray-900 bg-gray-900 px-4 py-2 text-sm font-medium text-white transition-colors hover:border-gray-800 hover:bg-gray-800" aria-label="GitHub" target="_blank" rel="noreferrer"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-4"> <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path> <path d="M9 18c-4.51 2-5-2-7-2"></path> </svg> <span class="hidden md:inline">GitHub</span> </a> <div class="relative block lg:hidden"> <dropdown-button> <button type="button" aria-haspopup="true" aria-expanded="false" aria-controls="dropdown-menu" aria-label="Open navigation" class="inline-flex rounded-lg bg-gray-100 p-2 md:hidden"> <svg data-open="false" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 data-[open=false]:inline data-[open=true]:hidden"> <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path> </svg> <svg data-open="false" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 data-[open=false]:hidden data-[open=true]:inline"> <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12"></path> </svg> </button> </dropdown-button> <script type="module">class i extends HTMLElement{isOpen=!1;clickHandler=null;connectedCallback(){const t=this.querySelector("button");if(!t)return;const e=[...t.querySelectorAll("svg")];this.clickHandler=()=>{this.isOpen=!this.isOpen,t.setAttribute("aria-expanded",String(this.isOpen)),t.setAttribute("aria-label",this.isOpen?"Close navigation":"Open navigation"),e.forEach(n=>n.setAttribute("data-open",String(this.isOpen))),document.dispatchEvent(new CustomEvent("dropdown:toggle",{bubbles:!0,detail:{open:this.isOpen}}))},t.addEventListener("click",this.clickHandler)}disconnectedCallback(){const t=this.querySelector("button");t&&this.clickHandler&&(t.removeEventListener("click",this.clickHandler),this.clickHandler=null)}}customElements.define("dropdown-button",i);</script> <dropdown-menu> <div data-dropdown="false" id="dropdown-menu" role="menu" class="absolute top-full right-0 z-50 mt-2 w-64 overflow-hidden rounded-lg border border-gray-200 bg-white shadow-lg data-[dropdown=false]:hidden data-[dropdown=true]:block"> <a href="/components/application" class="text-sm font-medium text-gray-600 transition-colors hover:text-gray-900 block px-4 py-2 focus:ring-inset"> 
+Application
+ </a> <a href="/components/marketing" class="text-sm font-medium text-gray-600 transition-colors hover:text-gray-900 block px-4 py-2 focus:ring-inset"> 
+Marketing
+ </a> <a href="/components/neobrutalism" class="text-sm font-medium text-gray-600 transition-colors hover:text-gray-900 block px-4 py-2 focus:ring-inset"> 
+Neobrutalism
+ </a> <a href="/blog" class="text-sm font-medium text-gray-600 transition-colors hover:text-gray-900 block px-4 py-2 focus:ring-inset">  Blog  </a> </div> </dropdown-menu> <script type="module">class n extends HTMLElement{toggleHandler=null;connectedCallback(){const e=this.querySelector("[data-dropdown]");e&&(this.toggleHandler=t=>{e.setAttribute("data-dropdown",t.detail.open?"true":"false")},document.addEventListener("dropdown:toggle",this.toggleHandler))}disconnectedCallback(){this.toggleHandler&&(document.removeEventListener("dropdown:toggle",this.toggleHandler),this.toggleHandler=null)}}customElements.define("dropdown-menu",n);</script> </div> </div> </div> </header>
+    <main id="main-content" class="mx-auto max-w-7xl space-y-8 px-4">
+      <h1 class="text-test">Hello World</h1>
+      <div class="space-y-2">
+  <details class="group [&amp;_summary::-webkit-details-marker]:hidden">
+    <summary class="flex cursor-pointer items-center justify-between gap-4 rounded-lg border border-gray-200 bg-white px-4 py-3 font-medium text-gray-900 hover:bg-gray-50">
+      <span>What are the basic features?</span>
+
+      <svg class="size-5 shrink-0 transition-transform duration-300 group-open:-rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+      </svg>
+    </summary>
+
+    <div class="p-4">
+      <p class="text-gray-700">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt similique, quae hic
+        dicta quo facere facilis praesentium a sunt, est quia pariatur nam, modi aut minus iste
+        odio consectetur molestias iusto cupiditate ullam laborum veniam quos officia. Quos,
+        temporibus perspiciatis!
+      </p>
+    </div>
+  </details>
+
+  <details class="group [&amp;_summary::-webkit-details-marker]:hidden">
+    <summary class="flex cursor-pointer items-center justify-between gap-4 rounded-lg border border-gray-200 bg-white px-4 py-3 font-medium text-gray-900 hover:bg-gray-50">
+      <span>How do I get started?</span>
+
+      <svg class="size-5 shrink-0 transition-transform duration-300 group-open:-rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+      </svg>
+    </summary>
+
+    <div class="p-4">
+      <p class="text-gray-700">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt similique, quae hic
+        dicta quo facere facilis praesentium a sunt, est quia pariatur nam, modi aut minus iste
+        odio consectetur molestias iusto cupiditate ullam laborum veniam quos officia. Quos,
+        temporibus perspiciatis!
+      </p>
+    </div>
+  </details>
+
+  <details class="group [&amp;_summary::-webkit-details-marker]:hidden">
+    <summary class="flex cursor-pointer items-center justify-between gap-4 rounded-lg border border-gray-200 bg-white px-4 py-3 font-medium text-gray-900 hover:bg-gray-50">
+      <span>What support options are available?</span>
+
+      <svg class="size-5 shrink-0 transition-transform duration-300 group-open:-rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+      </svg>
+    </summary>
+
+    <div class="p-4">
+      <p class="text-gray-700">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt similique, quae hic
+        dicta quo facere facilis praesentium a sunt, est quia pariatur nam, modi aut minus iste
+        odio consectetur molestias iusto cupiditate ullam laborum veniam quos officia. Quos,
+        temporibus perspiciatis!
+      </p>
+    </div>
+  </details>
+</div>
     </div>
     <script type="module" src="/src/main.js"></script>
   </body>
