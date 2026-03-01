@@ -2,13 +2,10 @@ import './style.css'
 // HEADER SHADOW
 window.addEventListener('scroll', () => {
     const header = document.getElementById('header');
-    const hero = document.getElementById('hero');
     if (window.scrollY > 80) {
-        header.classList.add('shadow-xl','bg-background','sticky');
-        hero.classList.remove('lg:pt-[120px]');
+        header.classList.add('shadow-2xl','bg-background');
     } else {
-        header.classList.remove('shadow-xl','bg-background','sticky');
-        hero.classList.add('lg:pt-[120px]');
+        header.classList.remove('shadow-2xl','bg-background');
     }
 });
 // NAVBAR

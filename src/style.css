@@ -17,6 +17,7 @@
     --color-pastel-secondary:#F8F5F2;
     --font-primary:"Be Vietnam Pro", sans-serif;
     --font-secondary:"Source Sans 3", sans-serif;
+    --radius-custom:3.33rem;
     /* overrides */
     --text-xl:20px;
     --text-3xl:27px;
@@ -29,16 +30,30 @@
   }
 }
 @utility bg-custom-hero {
-  background-image: url('/images/hero-image.png');
+  background-image: url('/images/hero-image.webp');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right bottom;
+  position: absolute;
+  bottom: -70px;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
 }
-@utility bg-color-hero {
-  background-image:linear-gradient(
-    to top,
-    transparent 0px,
-    transparent 70px, 
-    var(--color-background) 70px,    
-    var(--color-background) 100%);
+@utility rounded-custom-bl {
+    border-radius: var(--radius-custom);
+    border-bottom-left-radius: 0;
+}
+@utility rounded-custom-br {
+    border-radius: var(--radius-custom);
+    border-bottom-right-radius: 0;
+}
+@utility rounded-custom-tl {
+    border-radius: var(--radius-custom);
+    border-top-left-radius: 0;
+}
+@utility rounded-custom-tr {
+    border-radius: var(--radius-custom);
+    border-top-right-radius: 0;
 }

@@ -8,14 +8,13 @@
     <title>Get Work</title>
   </head>
   <body>
-  <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:rounded-lg focus:bg-white focus:px-4 focus:py-2 focus:font-medium focus:text-gray-900 focus:shadow-lg">Skip to content</a>
   <!-- NAVBAR -->
-  <header id="header" class="absolute top-0 z-50 w-full">
-    <nav class="max-w-7xl mx-auto px-4 py-8 font-secondary font-semibold text-white">
-      <div class="flex justify-between items-center h-16">
+  <header id="header" class="sticky top-0 z-50 w-full">
+    <nav class="max-w-7xl mx-auto px-4 font-secondary font-semibold text-white">
+      <div class="flex justify-between items-center h-[70px] lg:h-[120px]">
         <!-- Logo -->
-        <a href="#" class="text-xl font-bold tracking-tight">
-          <img src="/images/logo-light.svg" alt="Strathclyde  - domestic roofing">
+        <a href="#">
+          <img src="/images/logo-light.svg" alt="Strathclyde  - domestic roofing" class="max-h-[30px] lg:max-h-[52px]">
         </a>
         <!-- Desktop Menu -->
         <nav class="hidden md:flex items-center space-x-8">
@@ -86,93 +85,104 @@
   </header>
   <!-- END NAVBAR -->
   <!-- MAIN CONTENT -->
-  <main id="home">
-    <section id="hero" class="relative z-40 overflow-hidden lg:pt-[120px] bg-color-hero">
-      <div class="mx-auto relative max-w-7xl px-4">
-        <div class="lg:flex lg:pt-[80px] lg:pb-[70px] md:py-20 py-12 bg-custom-hero">
-          <div class="basis-1/2 lg:text-left text-center">
-            <h1 class="font-bold font-heading leading-tighter mb-4 text-white md:text-4xl text-3xl">Certified and trusted roofing specialists in Glasgow</h1>
-            <div class="mx-auto max-w-3xl lg:max-w-none pb-2">
-              <ul class="flex flex-col justify-start gap-2 py-8 px-0 text-white text-lg">
-                <li class="inline-flex items-center px-2.5 py-0.5">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="-ms-1 me-1.5 size-8 text-secondary">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                </svg>
-                  <p>NFRC &amp; Trustmark certified</p>
-                </li>
-                <li class="inline-flex items-center px-2.5 py-0.5">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="-ms-1 me-1.5 size-8 text-secondary">
+  <main id="home" class="mt-[-70px] lg:mt-[-120px]">
+    <section id="hero" class="relative z-40">
+      <div class="bg-custom-hero"></div>
+      <div class="bg-background pt-[70px] lg:pt-[120px]">
+        <div class="mx-auto relative max-w-7xl px-4">
+          <div class="lg:flex lg:pt-[80px] lg:pb-0 md:py-20 py-12">
+            <div class="basis-1/2 lg:text-left text-center">
+              <h1 class="font-bold font-heading leading-tighter mb-4 text-white md:text-4xl text-3xl">Certified and trusted roofing specialists in Glasgow</h1>
+              <div class="mx-auto max-w-3xl lg:max-w-none pb-2">
+                <ul class="flex flex-col justify-start gap-2 py-8 px-0 text-white text-lg">
+                  <li class="inline-flex items-center px-2.5 py-0.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="-ms-1 me-1.5 size-8 text-secondary">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                   </svg>
-                  <p>Scottish Home Improvement Awards finalist 2023/24/25</p>
-                </li>
-                <li class="inline-flex items-center px-2.5 py-0.5">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="-ms-1 me-1.5 size-8 text-secondary">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                  </svg>
-                  <p>20 year warranty on all new roofs</p>
-                </li>
-              </ul>
-              <div class="flex flex-col flex-nowrap gap-4 m-auto max-w-xs sm:flex-row sm:justify-center sm:max-w-md lg:justify-start lg:m-0 lg:max-w-7xl">
-                <div class="flex w-full sm:w-auto items-center">
-                  <a class="w-full px-12 py-4.5 bg-secondary font-secondary text-white text-xl rounded-full hover:bg-secondary-hover transition" href="#quote">Book your free survey and quote</a>
+                    <p>NFRC &amp; Trustmark certified</p>
+                  </li>
+                  <li class="inline-flex items-center px-2.5 py-0.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="-ms-1 me-1.5 size-8 text-secondary">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                    <p>Scottish Home Improvement Awards finalist 2023/24/25</p>
+                  </li>
+                  <li class="inline-flex items-center px-2.5 py-0.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="-ms-1 me-1.5 size-8 text-secondary">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                    <p>20 year warranty on all new roofs</p>
+                  </li>
+                </ul>
+                <div class="flex flex-col flex-nowrap gap-4 m-auto max-w-xs sm:flex-row sm:justify-center sm:max-w-md lg:justify-start lg:m-0 lg:max-w-7xl">
+                  <div class="flex w-full sm:w-auto items-center">
+                    <a class="w-full px-12 py-4.5 bg-secondary font-secondary text-white text-xl rounded-full hover:bg-secondary-hover transition" href="#quote">Book your free survey and quote</a>
+                  </div>
+                  <div class="flex w-full sm:w-auto items-center">
+                    <img src="/images/trustmark-dark.png" class="max-w-[80px] max-h-[50px]" alt="Trust Mark - Government Endorsed Quality">
+                  </div>
                 </div>
-                <div class="flex w-full sm:w-auto items-center">
-                  <img src="/images/trustmark-dark.png" class="max-w-[80px] max-h-[50px]" alt="Trust Mark - Government Endorsed Quality">
+                <div class="flex items-center w-full sm:w-auto p-8">
+                  <span class="font-semibold font-secondary inline-flex text-white">Prefer to call?</span>
+                  <span class="font-bold text-secondary inline-flex ml-1 text-xl">0800 800 8000</span>
                 </div>
-              </div>
-              <div class="flex items-center w-full sm:w-auto p-8">
-                <span class="font-semibold font-secondary inline-flex text-white">Prefer to call?</span>
-                <span class="font-bold text-secondary inline-flex ml-1 text-xl">0800 800 8000</span>
               </div>
             </div>
           </div>
-          <!-- <div class="basis-1/2">
-            <div class="relative m-auto max-w-5xl">
-              <img alt="Service van and a pickup truck with ladder racks" class="w-full mx-auto" src="/images/hero-image.png" srcset="/images/hero-image-2x.png 2x">
+        </div>
+      </div>      
+    </section>
+    <section id="trustpilot" class="mx-auto relative max-w-7xl px-4 py-8">Trust Pilot</section>
+    <section id="services" class="bg-pastel-primary lg:py-[100px]">
+      <div class="mx-auto relative max-w-7xl px-4">
+        <h2 class="font-bold pb-16 text-black text-4xl">Our roofing services</h2>
+        <div class="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-4">
+          <article class="overflow-hidden">
+            <img alt="Services roofing" src="/images/services-roofing1.webp" class="rounded-custom-bl object-cover">
+            <div class="py-4 sm:py-6">
+              <a href="#">
+                <h3 class="font-bold text-xl">Roof repairs</h3>
+              </a>
+              <p class="mt-2 line-clamp-3 text-grey">
+                Fast fixes for leaks, damage, and everyday wear.
+              </p>
             </div>
-          </div> -->
+          </article>
+          <article class="overflow-hidden">
+            <img alt="Services roofing" src="/images/services-roofing2.webp" class="rounded-custom-tr object-cover">
+            <div class="py-4 sm:py-6">
+              <a href="#">
+                <h3 class="font-bold text-xl">New roofs &amp; replacements</h3>
+              </a>
+              <p class="mt-2 line-clamp-3 text-grey">
+                New roofs installed with quality materials and guarantees.
+              </p>
+            </div>
+          </article>
+          <article class="overflow-hidden">
+            <img alt="Services roofing" src="/images/services-roofing3.webp" class="rounded-custom-tl object-cover">
+            <div class="py-4 sm:py-6">
+              <a href="#">
+                <h3 class="font-bold text-xl">Flat roofing</h3>
+              </a>
+              <p class="mt-2 line-clamp-3 text-grey">
+                Long-lasting flat roofs using modern, durable systems.
+              </p>
+            </div>
+          </article>
+          <article class="overflow-hidden">
+            <img alt="Services roofing" src="/images/services-roofing4.webp" class="rounded-custom-br object-cover">
+            <div class="py-4 sm:py-6">
+              <a href="#">
+                <h3 class="font-bold text-xl">Emergency repairs</h3>
+              </a>
+              <p class="mt-2 line-clamp-3 text-grey">
+                Rapid response to make your roof safe and watertight.
+              </p>
+            </div>
+          </article>
         </div>
       </div>
-    </section>
-    <section id="test">
-      <div class="flow-root">
-  <dl class="-my-3 divide-y divide-gray-200 text-sm">
-    <div class="grid grid-cols-1 gap-1 py-3 sm:grid-cols-3 sm:gap-4">
-      <dt class="font-medium text-gray-900">Title</dt>
-
-      <dd class="text-gray-700 sm:col-span-2">Mr</dd>
-    </div>
-
-    <div class="grid grid-cols-1 gap-1 py-3 sm:grid-cols-3 sm:gap-4">
-      <dt class="font-medium text-gray-900">Name</dt>
-
-      <dd class="text-gray-700 sm:col-span-2">John Frusciante</dd>
-    </div>
-
-    <div class="grid grid-cols-1 gap-1 py-3 sm:grid-cols-3 sm:gap-4">
-      <dt class="font-medium text-gray-900">Occupation</dt>
-
-      <dd class="text-gray-700 sm:col-span-2">Guitarist</dd>
-    </div>
-
-    <div class="grid grid-cols-1 gap-1 py-3 sm:grid-cols-3 sm:gap-4">
-      <dt class="font-medium text-gray-900">Salary</dt>
-
-      <dd class="text-gray-700 sm:col-span-2">$1,000,000+</dd>
-    </div>
-
-    <div class="grid grid-cols-1 gap-1 py-3 sm:grid-cols-3 sm:gap-4">
-      <dt class="font-medium text-gray-900">Bio</dt>
-
-      <dd class="text-gray-700 sm:col-span-2">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et facilis debitis explicabo
-        doloremque impedit nesciunt dolorem facere, dolor quasi veritatis quia fugit aperiam
-        aspernatur neque molestiae labore aliquam soluta architecto?
-      </dd>
-    </div>
-  </dl>
-</div>
     </section>
   </main>
   <!-- END MAIN CONTENT -->
