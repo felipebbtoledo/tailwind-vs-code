@@ -54,3 +54,13 @@ mobileDropdownBtn.addEventListener('click', () => {
     element.classList.toggle('hidden');
   });
 });
+// SHOW MORE BTN
+const showMoreBtn = document.getElementById('showMoreBtn');
+const extraItems = document.querySelectorAll('.extra-item');
+
+showMoreBtn.addEventListener('click', function() {
+    extraItems.forEach(item => {
+        item.classList.remove('hidden');
+    });
+    showMoreBtn.classList.add('hidden');
+});

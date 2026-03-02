@@ -19,8 +19,8 @@
           <img src="/images/logo-light.svg" alt="Strathclyde  - domestic roofing" class="max-h-[30px] lg:max-h-[52px]">
         </a>
         <!-- Desktop Menu -->
-        <nav id="desktop-menu" class="hidden md:flex items-center space-x-8">
-          <a href="#home" class="hover:text-pastel-secondary transition">Home</a>
+        <nav id="desktop-menu" class="hidden md:flex items-center gap-4 lg:gap-8">
+          <a href="#home" class="hover:text-pastel-secondary md:hidden lg:block transition">Home</a>
           <!-- Dropdown -->
           <div class="relative group">
             <button class="flex items-center hover:text-pastel-secondary transition py-13"> Services <svg class="ml-1 w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -127,26 +127,26 @@
               <h1 class="font-bold font-heading leading-tighter mb-4 text-white md:text-4xl text-3xl">Certified and trusted roofing specialists in Glasgow</h1>
               <div class="max-w-3xl lg:max-w-none pb-2">
                 <ul class="flex flex-col justify-start gap-2 py-8 px-0 text-white text-lg">
-                  <li class="flex items-start px-2.5 py-0.5">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="-ms-3 me-1.5 mt-1 md:mt-0 size-[18px] md:size-[24px] text-secondary">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                  </svg>
+                  <li class="flex items-start px-2.5 py-0.5 overflow-hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="-ms-3 me-1.5 mt-1 md:mt-0 size-[18px] md:size-[24px] text-secondary" style="size-[18px]">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
                     <p class="font-medium">NFRC &amp; Trustmark certified</p>
                   </li>
-                  <li class="flex items-start px-2.5 py-0.5">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="-ms-3 me-1.5 mt-1 md:mt-0 size-[18px] md:size-[24px] text-secondary">
+                  <li class="flex items-start px-2.5 py-0.5 overflow-hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="-ms-3 me-1.5 mt-1 md:mt-0 size-[18px] md:size-[24px] text-secondary" style="size-[18px]">
                       <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                     </svg>
                     <p class="font-medium">Scottish Home Improvement Awards finalist 2023/24/25</p>
                   </li>
-                  <li class="flex items-start px-2.5 py-0.5">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="-ms-3 me-1.5 mt-1 md:mt-0 size-[18px] md:size-[24px] text-secondary">
+                  <li class="flex items-start px-2.5 py-0.5 overflow-hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="-ms-3 me-1.5 mt-1 md:mt-0 size-[18px] md:size-[24px] text-secondary" style="size-[18px]">
                       <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                     </svg>
                     <p class="font-medium">20 year warranty on all new roofs</p>
                   </li>
                 </ul>
-                <div class="flex flex-nowrap gap-4 sm:flex-row sm:justify-center sm:max-w-md lg:justify-start lg:m-0 lg:max-w-7xl">
+                <div class="flex flex-nowrap gap-4 sm:flex-row lg:justify-start lg:m-0 lg:max-w-7xl">
                   <div class="flex items-center">
                     <a class="px-6 py-4 md:px-12 md:py-4.5 bg-secondary font-secondary text-white text-md lg:text-xl rounded-full hover:bg-secondary-hover transition" href="#quote">Book your free survey and quote</a>
                   </div>
@@ -154,7 +154,7 @@
                     <img src="/images/trustmark-dark.png" class="max-w-[80px] max-h-[50px]" alt="Trust Mark - Government Endorsed Quality">
                   </div>
                 </div>
-                <div class="flex items-center w-full sm:w-auto px-4.5 py-8 lg:p-8">
+                <div class="flex items-center w-full sm:w-auto py-8 lg:p-8">
                   <span class="font-semibold font-secondary inline-flex text-white">Prefer to call?</span>
                   <span class="font-bold text-secondary inline-flex ml-1 text-xl">0800 800 8000</span>
                 </div>
@@ -164,16 +164,23 @@
         </div>
       </div>      
     </section>
-    <section id="trustpilot" class="mx-auto relative max-w-7xl px-5.5 py-11">Trust Pilot</section>
-    <section id="services" class="bg-pastel-primary py-[50px] lg:py-[100px]">
+    <section id="trustpilot" class="mx-auto relative max-w-7xl px-5.5 py-10.5">
+      <div class="flex gap-4 justify-start items-center font-secondary">
+        <span class="text-sm">Excellent</span>
+        <img alt="TrustScore 5 out of 5" width="84px" src="https://cdn.trustpilot.net/brand-assets/4.1.0/stars/stars-5.svg">
+        <p class="hidden sm:block text-sm"><span class="font-bold">436</span> reviews on</p>
+        <img alt="Trustpilot reviews" class="max-h-[18px]" src="https://cdn.trustpilot.net/brand-assets/4.3.0/logo-black.svg">
+      </div>
+    </section>
+    <section id="services" class="relative bg-pastel-primary py-[50px] lg:py-[100px]">
       <div class="mx-auto relative max-w-7xl px-5.5">
-        <h2 class="font-bold pb-8 md:pb-16 text-black text-2xl md:text-4xl capitalize"><span class="hidden md:visible">Our</span> roofing services</h2>
-        <div class="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-4">
+        <h2 class="font-bold pb-8 md:pb-16 text-black text-2xl md:text-4xl capitalize"><span class="hidden md:inline-block">Our</span> roofing services</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-12">
           <article class="overflow-hidden">
             <img alt="Services roofing" src="/images/services-roofing1.webp" class="rounded-custom-bl object-cover w-full">
             <div class="py-4 sm:py-6">
               <a href="#">
-                <h3 class="font-bold text-xl">Roof repairs</h3>
+                <h3 class="font-bold text-black text-xl text-nowrap">Roof repairs</h3>
               </a>
               <p class="mt-2 line-clamp-3 text-grey">
                 Fast fixes for leaks, damage, and everyday wear.
@@ -184,7 +191,7 @@
             <img alt="Services roofing" src="/images/services-roofing2.webp" class="rounded-custom-tr object-cover w-full">
             <div class="py-4 sm:py-6">
               <a href="#">
-                <h3 class="font-bold text-xl">New roofs &amp; replacements</h3>
+                <h3 class="font-bold text-black text-xl text-nowrap">New roofs &amp; replacements</h3>
               </a>
               <p class="mt-2 line-clamp-3 text-grey">
                 New roofs installed with quality materials and guarantees.
@@ -195,7 +202,7 @@
             <img alt="Services roofing" src="/images/services-roofing3.webp" class="rounded-custom-tl object-cover w-full">
             <div class="py-4 sm:py-6">
               <a href="#">
-                <h3 class="font-bold text-xl">Flat roofing</h3>
+                <h3 class="font-bold text-black text-xl text-nowrap">Flat roofing</h3>
               </a>
               <p class="mt-2 line-clamp-3 text-grey">
                 Long-lasting flat roofs using modern, durable systems.
@@ -206,13 +213,75 @@
             <img alt="Services roofing" src="/images/services-roofing4.webp" class="rounded-custom-br object-cover w-full">
             <div class="py-4 sm:py-6">
               <a href="#">
-                <h3 class="font-bold text-xl">Emergency repairs</h3>
+                <h3 class="font-bold text-black text-xl text-nowrap">Emergency repairs</h3>
               </a>
               <p class="mt-2 line-clamp-3 text-grey">
                 Rapid response to make your roof safe and watertight.
               </p>
             </div>
           </article>
+          <!-- HIDDEN TILES -->
+          <article class="hidden extra-item overflow-hidden">
+            <img alt="Services roofing" src="/images/services-roofing1.webp" class="rounded-custom-bl object-cover w-full">
+            <div class="py-4 sm:py-6">
+              <a href="#">
+                <h3 class="font-bold text-black text-xl text-nowrap">Roof repairs</h3>
+              </a>
+              <p class="mt-2 line-clamp-3 text-grey">
+                Fast fixes for leaks, damage, and everyday wear.
+              </p>
+            </div>
+          </article>
+          <article class="hidden extra-item overflow-hidden">
+            <img alt="Services roofing" src="/images/services-roofing2.webp" class="rounded-custom-tr object-cover w-full">
+            <div class="py-4 sm:py-6">
+              <a href="#">
+                <h3 class="font-bold text-black text-xl text-nowrap">New roofs &amp; replacements</h3>
+              </a>
+              <p class="mt-2 line-clamp-3 text-grey">
+                New roofs installed with quality materials and guarantees.
+              </p>
+            </div>
+          </article>
+          <article class="hidden extra-item overflow-hidden">
+            <img alt="Services roofing" src="/images/services-roofing3.webp" class="rounded-custom-tl object-cover w-full">
+            <div class="py-4 sm:py-6">
+              <a href="#">
+                <h3 class="font-bold text-black text-xl text-nowrap">Flat roofing</h3>
+              </a>
+              <p class="mt-2 line-clamp-3 text-grey">
+                Long-lasting flat roofs using modern, durable systems.
+              </p>
+            </div>
+          </article>
+          <article class="hidden extra-item overflow-hidden">
+            <img alt="Services roofing" src="/images/services-roofing4.webp" class="rounded-custom-br object-cover w-full">
+            <div class="py-4 sm:py-6">
+              <a href="#">
+                <h3 class="font-bold text-black text-xl text-nowrap">Emergency repairs</h3>
+              </a>
+              <p class="mt-2 line-clamp-3 text-grey">
+                Rapid response to make your roof safe and watertight.
+              </p>
+            </div>
+          </article>
+        </div>
+        <div class="relative bottom-[-60px] lg:bottom-[-110px] mx-auto text-center w-full">
+          <a id="showMoreBtn" class="px-8 py-4 bg-tertiary font-secondary font-bold text-white text-default rounded-full hover:bg-tertiary-hover transition" href="#services">+ More services</a>
+        </div>
+      </div>
+    </section>
+    <section id="freeSurvey" class="py-20">
+      <div class="mx-auto relative max-w-7xl px-5.5">
+        <div class="flex flex-col lg:flex-row justify-start lg:justify-between lg:gap-8 items-center">
+          <div class="w-full lg:w-3/4">
+            <h3 class="font-bold pb-4 md:pb-0 text-black text-2xl md:text-3xl">Free roof survey and quote in Glasgow</h2>
+            <p class="mt-2 line-clamp-3 text-lg text-grey">We’ll identify any leaks, damage or wear and provide a quote covering materials and labour</p>
+          </div>
+          <div class="flex w-full lg:w-auto gap-6 items-center justify-start py-8">
+            <a href="#" class="block text-center text-nowrap px-10 py-5.5 bg-secondary hover:bg-secondary-hover font-secondary font-semibold text-default text-white text-sm rounded-full transition">Get a free quote</a>
+            <img src="/images/trustmark-light.png" class="max-w-[80px] max-h-[50px]" alt="Trust Mark - Government Endorsed Quality">
+          </div>
         </div>
       </div>
     </section>

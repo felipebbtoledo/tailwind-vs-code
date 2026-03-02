@@ -34,6 +34,9 @@
 @utility text-md {
     font-size:14px;
 }
+@utility text-default {
+    font-size:16px;
+}
 @utility bg-custom-hero {
   background-image: url('/images/hero-image.webp');
   background-size: contain;
