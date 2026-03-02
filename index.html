@@ -8,41 +8,52 @@
     <title>Get Work</title>
   </head>
   <body>
+    <!-- OVERLAY BACKGROUND-->
+  <div id="overlay" class="hidden fixed inset-0 z-[49] grid place-content-center bg-black/50 p-4"></div>
   <!-- NAVBAR -->
-  <header id="header" class="sticky top-0 z-50 w-full">
-    <nav class="max-w-7xl mx-auto px-4 font-secondary font-semibold text-white">
+  <header id="header" class="sticky top-0 z-50 w-full bg-background md:bg-transparent">
+    <nav class="max-w-7xl mx-auto px-5.5 font-secondary font-semibold text-white">
       <div class="flex justify-between items-center h-[70px] lg:h-[120px]">
         <!-- Logo -->
-        <a href="#">
+        <a href="#" class="focus:outline-none">
           <img src="/images/logo-light.svg" alt="Strathclyde  - domestic roofing" class="max-h-[30px] lg:max-h-[52px]">
         </a>
         <!-- Desktop Menu -->
-        <nav class="hidden md:flex items-center space-x-8">
+        <nav id="desktop-menu" class="hidden md:flex items-center space-x-8">
           <a href="#home" class="hover:text-pastel-secondary transition">Home</a>
           <!-- Dropdown -->
           <div class="relative group">
-            <button class="flex items-center hover:text-pastel-secondary transition"> Services <svg class="ml-1 w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <button class="flex items-center hover:text-pastel-secondary transition py-13"> Services <svg class="ml-1 w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
               </svg>
             </button>
             <!-- Dropdown Panel -->
-            <div class="absolute left-0 mt-4 w-64 bg-white rounded-xl shadow-xl
+            <div class="absolute left-0 w-64 bg-background rounded-br-5xl shadow-xl
                         opacity-0 invisible scale-95 translate-y-2
                         group-hover:opacity-100 group-hover:visible
-                        group-hover:scale-100 group-hover:translate-y-0
+                        group-hover:scale-100 group-hover:translate-y-0 group-hover:backdrop-blur
                         transition-all duration-200 ease-out">
-              <div class="p-4 space-y-3">
-                <a href="#" class="block p-3 rounded-lg hover:bg-gray-50 transition">
-                  <p class="font-medium">For Startups</p>
-                  <p class="text-sm text-gray-500">Launch faster</p>
+              <div>
+                <a href="#" class="block text-sm text-white hover:text-primary py-6 px-8">
+                  Roof repairs
                 </a>
-                <a href="#" class="block p-3 rounded-lg hover:bg-gray-50 transition">
-                  <p class="font-medium">For Agencies</p>
-                  <p class="text-sm text-gray-500">Scale clients</p>
+                <a href="#" class="block border-t border-hr-dark-menu text-sm text-white hover:text-primary py-6 px-8">
+                  Roof repairs
                 </a>
-                <a href="#" class="block p-3 rounded-lg hover:bg-gray-50 transition">
-                  <p class="font-medium">Enterprise</p>
-                  <p class="text-sm text-gray-500">Advanced workflows</p>
+                <a href="#" class="block border-t border-hr-dark-menu text-sm text-white hover:text-primary py-6 px-8">
+                  Roof repairs
+                </a>
+                <a href="#" class="block border-t border-hr-dark-menu text-sm text-white hover:text-primary py-6 px-8">
+                  Roof repairs
+                </a>
+                <a href="#" class="block border-t border-hr-dark-menu text-sm text-white hover:text-primary py-6 px-8">
+                  Roof repairs
+                </a>
+                <a href="#" class="block border-t border-hr-dark-menu text-sm text-white hover:text-primary py-6 px-8">
+                  Roof repairs
+                </a>
+                <a href="#" class="block border-t border-hr-dark-menu text-sm text-white hover:text-primary py-6 px-8">
+                  Roof repairs
                 </a>
               </div>
             </div>
@@ -55,74 +66,95 @@
           <a href="#" class="ml-4 px-5 py-2.5 bg-primary text-white rounded-full hover:bg-primary-hover transition">Get a free quote</a>
         </nav>
         <!-- Mobile Button -->
-        <button id="mobileBtn" class="md:hidden focus:outline-none">
-          <svg id="menuIcon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-          </svg>
+        <button id="mobileBtn" class="md:hidden focus:outline-none group inline-flex w-6 h-6 text-white text-center items-center justify-center rounded shadow-[0_1px_0_theme(colors.slate.950/.04),0_1px_2px_theme(colors.slate.950/.12),inset_0_-2px_0_theme(colors.slate.950/.04)] hover:shadow-[0_1px_0_theme(colors.slate.950/.04),0_4px_8px_theme(colors.slate.950/.12),inset_0_-2px_0_theme(colors.slate.950/.04)] transition" aria-pressed="false" onclick="this.setAttribute('aria-pressed', !(this.getAttribute('aria-pressed') === 'true'))">
+            <span class="sr-only">Menu</span>
+            <svg class="w-5 h-5 fill-current pointer-events-none" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                <rect class="origin-center -translate-y-[5px] transition-all duration-300 ease-[cubic-bezier(.5,.85,.25,1.1)] group-[[aria-pressed=true]]:translate-x-0 group-[[aria-pressed=true]]:translate-y-0 group-[[aria-pressed=true]]:rotate-[315deg]" y="7" width="16" height="2" rx="1"></rect>
+                <rect class="origin-center transition-all duration-300 ease-[cubic-bezier(.5,.85,.25,1.8)] group-[[aria-pressed=true]]:rotate-45" y="7" width="16" height="2" rx="1"></rect>
+                <rect class="origin-center translate-y-[5px] transition-all duration-300 ease-[cubic-bezier(.5,.85,.25,1.1)] group-[[aria-pressed=true]]:translate-y-0 group-[[aria-pressed=true]]:rotate-[135deg]" y="7" width="16" height="2" rx="1"></rect>
+            </svg>
         </button>
       </div>
     </nav>
     <!-- Mobile Menu -->
-    <div id="mobileMenu" class="md:hidden hidden border-t border-gray-200 bg-white absolute w-full transition">
-      <div class="px-6 py-4 space-y-4">
-        <a href="#" class="block text-gray-700">Features</a>
+    <div id="mobileMenu" class="md:hidden hidden bg-background absolute w-full transition">
+      <div class="font-secondary font-semibold text-sm">
+        <button class="hidden flex justify-start gap-4 items-center w-full border-t border-hr-dark-menu text-white px-5.5 py-5" id="backBtnMobileMenu">
+          <svg width="7" height="12" viewBox="0 0 7 12" fill="none">
+            <path d="M2.64865 6L7 10.6L5.67568 12L5.24537e-07 6L5.67568 -1.15776e-07L7 1.4L2.64865 6Z" fill="white"/>
+          </svg>
+          Back
+        </button>
+        <a href="#" class="block border-t border-hr-dark-menu text-white px-5.5 py-5">Home</a>
         <!-- Mobile Dropdown -->
-        <div>
-          <button id="mobileDropdownBtn" class="flex justify-between items-center w-full text-gray-700"> Solutions <svg id="mobileArrow" class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+        <div class="border-t border-hr-dark-menu">
+          <button id="mobileDropdownBtn" class="flex justify-between items-center w-full text-white px-5.5 py-5">Services 
+            <svg id="mobileArrow" viewBox="0 0 7 12" fill="none" style="width: 7px;height:12px">
+              <path d="M4.35135 6L0 1.4L1.32432 0L7 6L1.32432 12L0 10.6L4.35135 6Z" fill="white"/>
             </svg>
           </button>
-          <div id="mobileDropdown" class="hidden mt-3 ml-3 space-y-2 text-sm text-gray-600">
-            <a href="#" class="block">For Startups</a>
-            <a href="#" class="block">For Agencies</a>
-            <a href="#" class="block">Enterprise</a>
+          <div id="mobileDropdown" class="hidden text-white text-sm">
+            <a href="#" class="block text-sm text-white py-5 px-5.5">Roof repairs</a>
+            <a href="#" class="block border-t border-hr-dark-menu text-sm text-white py-5 px-5.5">Roof repairs</a>
+            <a href="#" class="block border-t border-hr-dark-menu text-sm text-white py-5 px-5.5">Roof repairs</a>
+            <a href="#" class="block border-t border-hr-dark-menu text-sm text-white py-5 px-5.5">Roof repairs</a>
+            <a href="#" class="block border-t border-hr-dark-menu text-sm text-white py-5 px-5.5">Roof repairs</a>
+            <a href="#" class="block border-t border-hr-dark-menu text-sm text-white py-5 px-5.5">Roof repairs</a>
+            <a href="#" class="block border-t border-hr-dark-menu text-sm text-white py-5 px-5.5">Roof repairs</a>
           </div>
         </div>
-        <a href="#" class="block text-gray-700">Pricing</a>
-        <a href="#" class="block w-full text-center px-5 py-3 bg-black text-white rounded-full"> Get a free quote </a>
+        <a href="#" class="block border-t border-hr-dark-menu text-white px-5.5 py-5">Why choose us?</a>
+        <a href="#" class="block border-t border-hr-dark-menu text-white px-5.5 py-5">Areas covered</a>
+        <a href="#" class="block border-t border-hr-dark-menu text-white px-5.5 py-5">Reviews</a>
+        <a href="#" class="block border-t border-hr-dark-menu text-white px-5.5 py-5">Recent work</a>
+        <a href="#" class="block border-t border-hr-dark-menu text-white px-5.5 py-5">Frequently Asked Questions (FAQs)</a>
+        <div class="flex w-full gap-6 items-center justify-start px-5.5 py-[25px] border-t border-hr-dark-menu">
+          <a href="#" class="block text-center px-5 py-3 bg-secondary hover:bg-secondary-hover font-semibold text-white text-sm rounded-full transition">Book your free survey and quote</a>
+          <img src="/images/trustmark-dark.png" class="max-w-[80px] max-h-[50px]" alt="Trust Mark - Government Endorsed Quality">
+        </div>
       </div>
     </div>
   </header>
   <!-- END NAVBAR -->
   <!-- MAIN CONTENT -->
   <main id="home" class="mt-[-70px] lg:mt-[-120px]">
-    <section id="hero" class="relative z-40">
-      <div class="bg-custom-hero"></div>
+    <section id="hero" class="relative z-40 overflow-hidden xl:overflow-visible">
+      <div class="bg-custom-hero scale-200 right-[-50vw] bottom-[-65vw] lg:bottom-[-50vw] lg:scale-150 xl:scale-100 xl:right-0 xl:bottom-[-70px]"></div>
       <div class="bg-background pt-[70px] lg:pt-[120px]">
-        <div class="mx-auto relative max-w-7xl px-4">
-          <div class="lg:flex lg:pt-[80px] lg:pb-0 md:py-20 py-12">
-            <div class="basis-1/2 lg:text-left text-center">
+        <div class="mx-auto relative max-w-7xl px-5.5">
+          <div class="lg:flex lg:pt-[80px] lg:pb-0 md:py-20 pt-12">
+            <div class="basis-1/2 text-left">
               <h1 class="font-bold font-heading leading-tighter mb-4 text-white md:text-4xl text-3xl">Certified and trusted roofing specialists in Glasgow</h1>
-              <div class="mx-auto max-w-3xl lg:max-w-none pb-2">
+              <div class="max-w-3xl lg:max-w-none pb-2">
                 <ul class="flex flex-col justify-start gap-2 py-8 px-0 text-white text-lg">
-                  <li class="inline-flex items-center px-2.5 py-0.5">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="-ms-1 me-1.5 size-8 text-secondary">
+                  <li class="flex items-start px-2.5 py-0.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="-ms-3 me-1.5 mt-1 md:mt-0 size-[18px] md:size-[24px] text-secondary">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                   </svg>
-                    <p>NFRC &amp; Trustmark certified</p>
+                    <p class="font-medium">NFRC &amp; Trustmark certified</p>
                   </li>
-                  <li class="inline-flex items-center px-2.5 py-0.5">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="-ms-1 me-1.5 size-8 text-secondary">
+                  <li class="flex items-start px-2.5 py-0.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="-ms-3 me-1.5 mt-1 md:mt-0 size-[18px] md:size-[24px] text-secondary">
                       <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                     </svg>
-                    <p>Scottish Home Improvement Awards finalist 2023/24/25</p>
+                    <p class="font-medium">Scottish Home Improvement Awards finalist 2023/24/25</p>
                   </li>
-                  <li class="inline-flex items-center px-2.5 py-0.5">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="-ms-1 me-1.5 size-8 text-secondary">
+                  <li class="flex items-start px-2.5 py-0.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="-ms-3 me-1.5 mt-1 md:mt-0 size-[18px] md:size-[24px] text-secondary">
                       <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                     </svg>
-                    <p>20 year warranty on all new roofs</p>
+                    <p class="font-medium">20 year warranty on all new roofs</p>
                   </li>
                 </ul>
-                <div class="flex flex-col flex-nowrap gap-4 m-auto max-w-xs sm:flex-row sm:justify-center sm:max-w-md lg:justify-start lg:m-0 lg:max-w-7xl">
-                  <div class="flex w-full sm:w-auto items-center">
-                    <a class="w-full px-12 py-4.5 bg-secondary font-secondary text-white text-xl rounded-full hover:bg-secondary-hover transition" href="#quote">Book your free survey and quote</a>
+                <div class="flex flex-nowrap gap-4 sm:flex-row sm:justify-center sm:max-w-md lg:justify-start lg:m-0 lg:max-w-7xl">
+                  <div class="flex items-center">
+                    <a class="px-6 py-4 md:px-12 md:py-4.5 bg-secondary font-secondary text-white text-md lg:text-xl rounded-full hover:bg-secondary-hover transition" href="#quote">Book your free survey and quote</a>
                   </div>
-                  <div class="flex w-full sm:w-auto items-center">
+                  <div class="flex sm:w-auto items-center">
                     <img src="/images/trustmark-dark.png" class="max-w-[80px] max-h-[50px]" alt="Trust Mark - Government Endorsed Quality">
                   </div>
                 </div>
-                <div class="flex items-center w-full sm:w-auto p-8">
+                <div class="flex items-center w-full sm:w-auto px-4.5 py-8 lg:p-8">
                   <span class="font-semibold font-secondary inline-flex text-white">Prefer to call?</span>
                   <span class="font-bold text-secondary inline-flex ml-1 text-xl">0800 800 8000</span>
                 </div>
@@ -132,13 +164,13 @@
         </div>
       </div>      
     </section>
-    <section id="trustpilot" class="mx-auto relative max-w-7xl px-4 py-8">Trust Pilot</section>
-    <section id="services" class="bg-pastel-primary lg:py-[100px]">
-      <div class="mx-auto relative max-w-7xl px-4">
-        <h2 class="font-bold pb-16 text-black text-4xl">Our roofing services</h2>
+    <section id="trustpilot" class="mx-auto relative max-w-7xl px-5.5 py-11">Trust Pilot</section>
+    <section id="services" class="bg-pastel-primary py-[50px] lg:py-[100px]">
+      <div class="mx-auto relative max-w-7xl px-5.5">
+        <h2 class="font-bold pb-8 md:pb-16 text-black text-2xl md:text-4xl capitalize"><span class="hidden md:visible">Our</span> roofing services</h2>
         <div class="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-4">
           <article class="overflow-hidden">
-            <img alt="Services roofing" src="/images/services-roofing1.webp" class="rounded-custom-bl object-cover">
+            <img alt="Services roofing" src="/images/services-roofing1.webp" class="rounded-custom-bl object-cover w-full">
             <div class="py-4 sm:py-6">
               <a href="#">
                 <h3 class="font-bold text-xl">Roof repairs</h3>
@@ -149,7 +181,7 @@
             </div>
           </article>
           <article class="overflow-hidden">
-            <img alt="Services roofing" src="/images/services-roofing2.webp" class="rounded-custom-tr object-cover">
+            <img alt="Services roofing" src="/images/services-roofing2.webp" class="rounded-custom-tr object-cover w-full">
             <div class="py-4 sm:py-6">
               <a href="#">
                 <h3 class="font-bold text-xl">New roofs &amp; replacements</h3>
@@ -160,7 +192,7 @@
             </div>
           </article>
           <article class="overflow-hidden">
-            <img alt="Services roofing" src="/images/services-roofing3.webp" class="rounded-custom-tl object-cover">
+            <img alt="Services roofing" src="/images/services-roofing3.webp" class="rounded-custom-tl object-cover w-full">
             <div class="py-4 sm:py-6">
               <a href="#">
                 <h3 class="font-bold text-xl">Flat roofing</h3>
@@ -171,7 +203,7 @@
             </div>
           </article>
           <article class="overflow-hidden">
-            <img alt="Services roofing" src="/images/services-roofing4.webp" class="rounded-custom-br object-cover">
+            <img alt="Services roofing" src="/images/services-roofing4.webp" class="rounded-custom-br object-cover w-full">
             <div class="py-4 sm:py-6">
               <a href="#">
                 <h3 class="font-bold text-xl">Emergency repairs</h3>

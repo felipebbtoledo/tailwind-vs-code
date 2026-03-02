@@ -6,6 +6,7 @@
     --color-dark-grey:#636363;
     --color-hr-light:#EBEBEB;
     --color-hr-dark:#F3F4F5;
+    --color-hr-dark-menu:#29445D;
     --color-primary:#2D95EC;
     --color-primary-hover:#2272B6;
     --color-secondary:#17BADC;
@@ -20,6 +21,7 @@
     --radius-custom:3.33rem;
     /* overrides */
     --text-xl:20px;
+    --text-2xl:25px;
     --text-3xl:27px;
     --text-4xl:40px;
 }
@@ -28,6 +30,9 @@
     font-family: var(--font-primary);
     font-size:15px;
   }
+}
+@utility text-md {
+    font-size:14px;
 }
 @utility bg-custom-hero {
   background-image: url('/images/hero-image.webp');
@@ -56,4 +61,7 @@
 @utility rounded-custom-tr {
     border-radius: var(--radius-custom);
     border-top-right-radius: 0;
+}
+@utility rounded-br-5xl {
+    border-bottom-right-radius:3.325rem;
 }
